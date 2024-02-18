@@ -1,5 +1,6 @@
 import React from 'react';
 import buildingImage from '../assets/building.jpg';
+import { Link } from 'react-router-dom';
 
 function Sections() {
   return (
@@ -22,7 +23,7 @@ function Sections() {
 
       <section className="section2 w-1/2 h-screen float-left overflow-hidden">
         <div className="container p-10 h-full flex flex-col justify-center relative">
-          <a href="/page1" className="back-option absolute top-5 left-5 text-gray-400 font-bold hover:underline">Back</a>
+         <Link to="/page1" className="back-option absolute top-5 left-5 text-gray-400 font-bold hover:underline">Back </Link>
           <div className="already-text absolute top-5 right-5">
             <p className="already">SEPT 01/03</p>
             <p className="already"><b>Personal Info.</b></p>
@@ -40,7 +41,7 @@ function Sections() {
               <input type="checkbox" name="" id="" checked className="mr-2" />
               I agree to terms & conditions
             </label>
-            <button className="btn bg-blue-500 w-1/2 text-white font-bold py-2 px-4 rounded mb-4"><a href="/page3">Register Account</a></button> <br />
+            <button className="btn bg-blue-500 w-1/2 text-white font-bold py-2 px-4 rounded mb-4"><Link to="/page3">Register Account</Link></button> <br />
             <button className="btn2 bg-white w-1/2 border border-blue-100 text-black font-bold py-2 px-4 rounded">Register with Google</button>
           </div>
         </div>

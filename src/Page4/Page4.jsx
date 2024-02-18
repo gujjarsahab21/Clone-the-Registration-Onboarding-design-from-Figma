@@ -1,5 +1,6 @@
 import React from 'react';
 import buildingImage from '../assets/building.jpg'; 
+import { Link } from 'react-router-dom';
 
 function Sections() {
   return (
@@ -20,7 +21,7 @@ function Sections() {
 
       <section className="section2 w-1/2 h-screen float-left">
         <div className="container flex flex-col justify-center items-center p-10 relative">
-          <a href="/page3" className="back-option absolute top-5 left-5 text-gray-300 font-bold hover:underline">Back</a>
+         <Link to="/page3" className="back-option absolute top-5 left-5 text-gray-300 font-bold hover:underline"> Back</Link>
           <div className="already-text absolute top-5 right-5">
             <p className="already text-gray-300">STEP 03/03</p>
             <p className="already text-gray-400"><b>Bank verification</b></p>
